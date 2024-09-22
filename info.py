@@ -20,7 +20,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS', 'https://graph.org/file/6b5d067ca32eeb6dfa406.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'http://postimg.cc/3dNzBcFX http://postimg.cc/njx6GV3r http://postimg.cc/f3mGdSj1 http://postimg.cc/c6XVfSw1')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/70c306053d29595749a52.mp4")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/9f3f47c690bbcc67633c2.jpg'))
@@ -33,7 +33,7 @@ REFER_PICS = (environ.get("REFER_PICS", "https://graph.org/file/1a2e64aee3d4d10e
 STREAM_SITE = (environ.get('STREAM_SITE', 'ziplinker.net')) # not support
 STREAM_API = (environ.get('STREAM_API', '6619765374f9caf51134d362c17da0b3309be2cf'))
 STREAMHTO = (environ.get('STREAMHTO', ''))
-BOT_USERNAME = environ.get("BOT_USERNAME", "JISSHU_BOT")
+BOT_USERNAME = environ.get("BOT_USERNAME", "JiraiyaFilter_Bot")
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5672857559').split()]
@@ -111,8 +111,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://{}/".format(FQDN, PORT)
+URL = "jiraiyabot.koyeb.app/".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "jiraiyabot.koyeb.app/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'JisshuBot'))
@@ -127,9 +127,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',True))
 if HAS_SSL:
-    URL = "https://{}/".format(FQDN)
+    URL = "jiraiyabot.koyeb.app/".format(FQDN)
 else:
-    URL = "http://{}/".format(FQDN)
+    URL = "jiraiyabot.koyeb.app/".format(FQDN)
 
 
 # Online Stream and Download
