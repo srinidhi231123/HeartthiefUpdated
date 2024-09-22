@@ -23,10 +23,10 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS', 'http://postimg.cc/3dNzBcFX http://postimg.cc/njx6GV3r http://postimg.cc/f3mGdSj1 http://postimg.cc/c6XVfSw1')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/43fbc8a7f73fd3c051dd0.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/e215d12bfd4fa2155e90e.mp4")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/9f3f47c690bbcc67633c2.jpg'))
-SUBSCRIPTIO = (environ.get('SUBSCRIPTION', 'https://graph.org/file/453630052fef8854ec138.jpg')).split()
-CODE = (environ.get('CODE', 'https://graph.org/file/ce995209653777540f02e.jpg'))
-PAYPICS = (environ.get('PAYPICS', 'https://graph.org/file/f4db1c3ad3d9e38b328e6.jpg')).split()
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://envs.sh/0RT.jpg'))
+SUBSCRIPTIO = (environ.get('SUBSCRIPTION', 'https://envs.sh/0RT.jpg')).split()
+CODE = (environ.get('CODE', 'https://envs.sh/0RB.jpg'))
+PAYPICS = (environ.get('PAYPICS', 'https://envs.sh/0RB.jpg')).split()
 REFER_PICS = (environ.get("REFER_PICS", "https://graph.org/file/1a2e64aee3d4d10edd930.jpg")).split() 
 
 #stream link shortner
