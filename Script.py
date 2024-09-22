@@ -1,21 +1,21 @@
 class script(object):
-    START_TXT = """Hᴇʏ {}, {}\n\nI Aᴍ Lᴀᴛᴇꜱᴛ Aᴅᴠᴀɴᴄᴇᴅ Aɴᴅ Pᴏᴡᴇʀꜰᴜʟ Aᴜᴛᴏ Fɪʟᴛᴇʀ Bᴏᴛ+└Aᴡᴇꜱᴏᴍᴇ Fɪʟᴛᴇʀ┘+├Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ┤+☞Mᴀɴᴜᴀʟ Fɪᴛᴇʀ☜ Aɴᴅ ᢵCᴜꜱᴛᴏᴍɪᴢᴇᴅ Sʜᴏʀᴛɴᴇʀ Sᴜᴘᴘᴏʀᴛᢴ Aɴᴅ ᢾPʀᴇᴍɪᴜᴍ Fᴇᴀᴛᴜʀᴇꜱᢿ.\n\nMᴀɴᴛᴀɪɴᴇᴅ Bʏ : <a href="https://t.me/TMZ_ADMIN_BOT">Ƙυƚƚყ</a>"""
+    START_TXT = """Hᴇʏ {}, {}\n\nI Aᴍ Lᴀᴛᴇꜱᴛ Aᴅᴠᴀɴᴄᴇᴅ Aɴᴅ Pᴏᴡᴇʀꜰᴜʟ Aᴜᴛᴏ Fɪʟᴛᴇʀ Bᴏᴛ+└Aᴡᴇꜱᴏᴍᴇ Fɪʟᴛᴇʀ┘+├Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ┤+☞Mᴀɴᴜᴀʟ Fɪᴛᴇʀ☜ Aɴᴅ ᢵCᴜꜱᴛᴏᴍɪᴢᴇᴅ Sʜᴏʀᴛɴᴇʀ Sᴜᴘᴘᴏʀᴛᢴ Aɴᴅ ᢾPʀᴇᴍɪᴜᴍ Fᴇᴀᴛᴜʀᴇꜱᢿ.\n\nMᴀɴᴛᴀɪɴᴇᴅ Bʏ : <a href="https://t.me/KuttyAdmin_Bot">Ƙυƚƚყ</a>"""
 
-    GSTART_TXT = """Hᴇʏ {},\n\nI Aᴍ Lᴀᴛᴇꜱᴛ Aᴅᴠᴀɴᴄᴇᴅ Aɴᴅ Pᴏᴡᴇʀꜰᴜʟ Aᴜᴛᴏ Fɪʟᴛᴇʀ Bᴏᴛ+└Aᴡᴇꜱᴏᴍᴇ Fɪʟᴛᴇʀ┘+├Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ┤+☞Mᴀɴᴜᴀʟ Fɪᴛᴇʀ☜ Aɴᴅ ᢵCᴜꜱᴛᴏᴍɪᴢᴇᴅ Sʜᴏʀᴛɴᴇʀ Sᴜᴘᴘᴏʀᴛᢴ Aɴᴅ ᢾPʀᴇᴍɪᴜᴍ Fᴇᴀᴛᴜʀᴇꜱᢿ.\n\nMᴀɴᴛᴀɪɴᴇᴅ Bʏ : <a href="https://t.me/TMZ_ADMIN_BOT">Ƙυƚƚყ</a>"""
+    GSTART_TXT = """Hᴇʏ {},\n\nI Aᴍ Lᴀᴛᴇꜱᴛ Aᴅᴠᴀɴᴄᴇᴅ Aɴᴅ Pᴏᴡᴇʀꜰᴜʟ Aᴜᴛᴏ Fɪʟᴛᴇʀ Bᴏᴛ+└Aᴡᴇꜱᴏᴍᴇ Fɪʟᴛᴇʀ┘+├Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ┤+☞Mᴀɴᴜᴀʟ Fɪᴛᴇʀ☜ Aɴᴅ ᢵCᴜꜱᴛᴏᴍɪᴢᴇᴅ Sʜᴏʀᴛɴᴇʀ Sᴜᴘᴘᴏʀᴛᢴ Aɴᴅ ᢾPʀᴇᴍɪᴜᴍ Fᴇᴀᴛᴜʀᴇꜱᢿ.\n\nMᴀɴᴛᴀɪɴᴇᴅ Bʏ : <a href="https://t.me/KuttyAdmin_Bot">Ƙυƚƚყ</a>"""
     
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b><blockquote>⍟───[ MY Dᴇᴛᴀɪʟꜱ ]───⍟</blockquote>
     
-‣ Mʏ Nᴀᴍᴇ : <a href=https://t.me/ThalapathyFilter_Bot>Iᴛᴀᴄʜɪ Uᴄʜɪʜᴀ Bᴏᴛ</a>
+‣ Mʏ Nᴀᴍᴇ : <a href='https://t.me/JiraiyaFilter_Bot'>Jɪʀᴀɪʏᴀ Fɪʟᴛᴇʀ Bᴏᴛ</a>
 ‣ Mʏ Bᴇsᴛ Fʀɪᴇɴᴅ : <a href='tg://settings'>Tʜɪs Pᴇʀsᴏɴ</a> 
-‣ Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/TMZ_ADMIN_BOT'>Ƙυƚƚყ</a> 
+‣ Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/KuttyAdmin_Bot'>Ƙυƚƚყ</a> 
 ‣ Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a> 
 ‣ Lᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a> 
 ‣ Dᴀᴛᴀ Bᴀsᴇ : <a href='https://www.mongodb.com/'>Mᴏɴɢᴏ Dʙ</a> 
 ‣ Bᴏᴛ Sᴇʀᴠᴇʀ : <a href='https://heroku.com'>Hᴇʀᴏᴋᴜ</a> 
-‣ Bᴜɪʟᴅ Sᴛᴀᴛᴜs : ᴠ2.7.1 [sᴛᴀʙʟᴇ]</b>"""
+‣ Bᴜɪʟᴅ Sᴛᴀᴛᴜs : ᴠ2.7.2 [Sᴛᴀʙʟᴇ]</b>"""
     
     CHANNELS = """
 <b>⚡ Gʀᴏᴜᴘs & Cʜᴀɴɴᴇʟs Iɴғᴏ ⚡ 
@@ -40,14 +40,14 @@ Iᴅ = <code>{}</code>
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
 Aᴅᴅᴇᴅ Bʏ - {}
 
-Bʏ @ThalapathyFilter_Bot"""
+Bʏ @JiraiyaFilter_Bot 🗲"""
 
     LOG_TEXT_P = """#NewUser
     
 Iᴅ - <code>{}</code>
 Nᴀᴍᴇ - {}
 
-Bʏ @ThalapathyFilter_Bot"""
+Bʏ @JiraiyaFilter_Bot 🗲"""
 
     ALRT_TXT = """Hᴇʟʟᴏ {},
 Tʜɪꜱ Iꜱ Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇꜱᴛ,
@@ -100,7 +100,7 @@ Exᴀᴍᴘʟᴇ : Loki S01 or Loki S01E04 or Lucifer S03E24
 
 ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇꜱ ɪɴ ᴛʜɪꜱ ʙᴏᴛ ᴀʀᴇ ꜰʀᴇᴇʟʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛʜᴇ ɪɴᴛᴇʀɴᴇᴛ ᴏʀ ᴘᴏꜱᴛᴇᴅ ʙʏ ꜱᴏᴍᴇʙᴏᴅʏ ᴇʟꜱᴇ. ᴊᴜꜱᴛ ꜰᴏʀ ᴇᴀꜱʏ ꜱᴇᴀʀᴄʜɪɴɢ ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ɪɴᴅᴇxɪɴɢ ꜰɪʟᴇꜱ ᴡʜɪᴄʜ ᴀʀᴇ ᴀʟʀᴇᴀᴅʏ ᴜᴘʟᴏᴀᴅᴇᴅ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ. ᴡᴇ ʀᴇꜱᴘᴇᴄᴛ ᴀʟʟ ᴛʜᴇ ᴄᴏᴘʏʀɪɢʜᴛ ʟᴀᴡꜱ ᴀɴᴅ ᴡᴏʀᴋꜱ ɪɴ ᴄᴏᴍᴘʟɪᴀɴᴄᴇ ᴡɪᴛʜ ᴅᴍᴄᴀ ᴀɴᴅ ᴇᴜᴄᴅ. ɪꜰ ᴀɴʏᴛʜɪɴɢ ɪꜱ ᴀɢᴀɪɴꜱᴛ ʟᴀᴡ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ꜱᴏ ᴛʜᴀᴛ ɪᴛ ᴄᴀɴ ʙᴇ ʀᴇᴍᴏᴠᴇᴅ ᴀꜱᴀᴘ. ɪᴛ ɪꜱ ꜰᴏʀʙɪʙʙᴇɴ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ, ꜱᴛʀᴇᴀᴍ, ʀᴇᴘʀᴏᴅᴜᴄᴇ, ꜱʜᴀʀᴇ ᴏʀ ᴄᴏɴꜱᴜᴍᴇ ᴄᴏɴᴛᴇɴᴛ ᴡɪᴛʜᴏᴜᴛ ᴇxᴘʟɪᴄɪᴛ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ꜰʀᴏᴍ ᴛʜᴇ ᴄᴏɴᴛᴇɴᴛ ᴄʀᴇᴀᴛᴏʀ ᴏʀ ʟᴇɢᴀʟ ᴄᴏᴘʏʀɪɢʜᴛ ʜᴏʟᴅᴇʀ. ɪꜰ ʏᴏᴜ ʙᴇʟɪᴇᴠᴇ ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴠɪᴏʟᴀᴛɪɴɢ ʏᴏᴜʀ ɪɴᴛᴇʟʟᴇᴄᴛᴜᴀʟ ᴘʀᴏᴘᴇʀᴛʏ, ᴄᴏɴᴛᴀᴄᴛ ᴛʜᴇ ʀᴇꜱᴘᴇᴄᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ ꜰᴏʀ ʀᴇᴍᴏᴠᴀʟ. ᴛʜᴇ ʙᴏᴛ ᴅᴏᴇꜱ ɴᴏᴛ ᴏᴡɴ ᴀɴʏ ᴏꜰ ᴛʜᴇꜱᴇ ᴄᴏɴᴛᴇɴᴛꜱ, ɪᴛ ᴏɴʟʏ ɪɴᴅᴇx ᴛʜᴇ ꜰɪʟᴇꜱ ꜰʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ. 
 
-🌿 Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ : <a href='https://t.me/TMZ_ADMIN_BOT'>Ƙυƚƚყ</a></b>"""
+🌿 Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ : <a href='https://t.me/KuttyAdmin_Bot'>Ƙυƚƚყ</a></b>"""
 
     USERS_TXT = """👋 ʜᴇʏ {},
 
@@ -243,7 +243,7 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     CREDITS_TXT = """<b>
 ❤️‍🩹 <u>Sᴘᴇᴄɪᴀʟ Tʜᴀɴᴋꜱ Tᴏ Eᴠᴇʀʏᴏɴᴇ</u>
 
-• Mᴀɪɴ Oᴡɴᴇʀ : <a href="https://t.me/TMZ_ADMIN_BOT">Ƙυƚƚყ❤️‍🔥</a>
+• Mᴀɪɴ Oᴡɴᴇʀ : <a href="https://t.me/KuttyAdmin_Bot">Ƙυƚƚყ❤️‍🔥</a>
 
 I Aᴍ Sᴏʀʀʏ Iꜰ I Fᴏʀɢᴏᴛ Sᴏᴍᴇᴏɴᴇ 🫂
 Tʜᴀɴᴋ Yᴏᴜ Fᴏʀ Hᴇʟᴘɪɴɢ Iɴ Tʜɪꜱ Aᴍᴀᴢɪɴɢ Rᴏʟʟᴇʀ Cᴏᴀꜱᴛᴇʀ Jᴏᴜʀɴᴇʏ 🚀</b>
@@ -286,11 +286,11 @@ Requested by : {message.from_user.mention}</b>
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v4.2 [ Sᴛᴀʙʟᴇ ]</code>
 
-Bʏ @ThalapathyFilter_Bot</b>"""
+Bʏ @JiraiyaFilter_Bot 🗲</b>"""
 
     LOGO = """
 
-BOT WORKING PROPERLY"""
+BOT WORKING PROPERLY 💖"""
 
     #PLANS
 
@@ -456,5 +456,5 @@ BOT WORKING PROPERLY"""
     DEVELOPER_TXT = """
 Special Thanks To ❤️ Developer -
 
--Developer [Owner of this bot ]<a href='https://t.me/TMZ_ADMIN_BOT'>Ƙυƚƚყ</a>
+-Developer [Owner of this bot ]<a href='https://t.me/KuttyAdmin_Bot'>Ƙυƚƚყ</a>
 """
