@@ -1459,7 +1459,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
        if JS_WEB_PREMIUM and has_premium:
           btn = [[
                InlineKeyboardButton("Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ", url=download),
-               InlineKeyboardButton("Wᴀᴛᴄʜ Oɴʟɪɴᴇ 🖥️", url=online)
+               InlineKeyboardButton("Wᴀᴛᴄʜ Oɴʟɪɴᴇ", url=online)
                ], [
                InlineKeyboardButton('🖥️ Watch On Telegram 🧿', web_app=WebAppInfo(url=online))
                ], [
@@ -1469,7 +1469,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         # Show buttons to everyone if JS_WEB_PREMIUM is False
            btn = [[
                InlineKeyboardButton("Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ", url=download),
-               InlineKeyboardButton("Wᴀᴛᴄʜ Oɴʟɪɴᴇ 🖥️", url=online)
+               InlineKeyboardButton("Wᴀᴛᴄʜ Oɴʟɪɴᴇ", url=online)
                ], [
                InlineKeyboardButton('🖥️ Watch On Telegram 🧿', web_app=WebAppInfo(url=online))
                ], [
