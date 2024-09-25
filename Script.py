@@ -1,21 +1,13 @@
 class script(object):
-    START_TXT = """Hᴇʏ {}, {}\n\nI Aᴍ Lᴀᴛᴇꜱᴛ Aᴅᴠᴀɴᴄᴇᴅ Aɴᴅ Pᴏᴡᴇʀꜰᴜʟ Aᴜᴛᴏ Fɪʟᴛᴇʀ Bᴏᴛ+└Aᴡᴇꜱᴏᴍᴇ Fɪʟᴛᴇʀ┘+├Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ┤+☞Mᴀɴᴜᴀʟ Fɪᴛᴇʀ☜ Aɴᴅ ᢵCᴜꜱᴛᴏᴍɪᴢᴇᴅ Sʜᴏʀᴛɴᴇʀ Sᴜᴘᴘᴏʀᴛᢴ Aɴᴅ ᢾPʀᴇᴍɪᴜᴍ Fᴇᴀᴛᴜʀᴇꜱᢿ.\n\nMᴀɴᴛᴀɪɴᴇᴅ Bʏ : <a href="https://t.me/KuttyAdmin_Bot">Ƙυƚƚყ</a>"""
+    START_TXT = """Hᴇʏ {}, {}\n\nI Aᴍ Lᴀᴛᴇꜱᴛ Aᴅᴠᴀɴᴄᴇᴅ Aɴᴅ Pᴏᴡᴇʀꜰᴜʟ Aᴜᴛᴏ Fɪʟᴛᴇʀ Bᴏᴛ+└Aᴡᴇꜱᴏᴍᴇ Fɪʟᴛᴇʀ┘+├Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ┤+☞Mᴀɴᴜᴀʟ Fɪᴛᴇʀ☜ Aɴᴅ ᢵCᴜꜱᴛᴏᴍɪᴢᴇᴅ Sʜᴏʀᴛɴᴇʀ Sᴜᴘᴘᴏʀᴛᢴ Aɴᴅ ᢾPʀᴇᴍɪᴜᴍ Fᴇᴀᴛᴜʀᴇꜱᢿ.\n\nMᴀɴᴛᴀɪɴᴇᴅ Bʏ : <a href="https://t.me/HeartThieft_bot">ʜᴇᴀʀᴛ_ᴛʜɪᴇꜰᴛ</a>"""
 
-    GSTART_TXT = """Hᴇʏ {},\n\nI Aᴍ Lᴀᴛᴇꜱᴛ Aᴅᴠᴀɴᴄᴇᴅ Aɴᴅ Pᴏᴡᴇʀꜰᴜʟ Aᴜᴛᴏ Fɪʟᴛᴇʀ Bᴏᴛ+└Aᴡᴇꜱᴏᴍᴇ Fɪʟᴛᴇʀ┘+├Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ┤+☞Mᴀɴᴜᴀʟ Fɪᴛᴇʀ☜ Aɴᴅ ᢵCᴜꜱᴛᴏᴍɪᴢᴇᴅ Sʜᴏʀᴛɴᴇʀ Sᴜᴘᴘᴏʀᴛᢴ Aɴᴅ ᢾPʀᴇᴍɪᴜᴍ Fᴇᴀᴛᴜʀᴇꜱᢿ.\n\nMᴀɴᴛᴀɪɴᴇᴅ Bʏ : <a href="https://t.me/KuttyAdmin_Bot">Ƙυƚƚყ</a>"""
+    GSTART_TXT = """Hᴇʏ {},\n\nI Aᴍ Lᴀᴛᴇꜱᴛ Aᴅᴠᴀɴᴄᴇᴅ Aɴᴅ Pᴏᴡᴇʀꜰᴜʟ Aᴜᴛᴏ Fɪʟᴛᴇʀ Bᴏᴛ+└Aᴡᴇꜱᴏᴍᴇ Fɪʟᴛᴇʀ┘+├Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ┤+☞Mᴀɴᴜᴀʟ Fɪᴛᴇʀ☜ Aɴᴅ ᢵCᴜꜱᴛᴏᴍɪᴢᴇᴅ Sʜᴏʀᴛɴᴇʀ Sᴜᴘᴘᴏʀᴛᢴ Aɴᴅ ᢾPʀᴇᴍɪᴜᴍ Fᴇᴀᴛᴜʀᴇꜱᢿ.\n\nMᴀɴᴛᴀɪɴᴇᴅ Bʏ : <a href="https://t.me/HeartThieft_bot">ʜᴇᴀʀᴛ_ᴛʜɪᴇꜰᴛ</a>"""
     
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
-    ABOUT_TXT = """<b><blockquote>⍟───[ MY Dᴇᴛᴀɪʟꜱ ]───⍟</blockquote>
+    ABOUT_TXT = """<blockquote><b>‣ ᴍʏ ɴᴀᴍᴇ : ʜᴇᴀʀᴛ_ᴛʜɪᴇꜰᴛ 😇\n‣ ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/HeartThieft_bot'>ʜᴇᴀʀᴛ_ᴛʜɪᴇꜰᴛ😇</a>\n‣ ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ\n‣ ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ\n‣ ᴅᴀᴛᴀ ʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ\n‣ ʜᴏsᴛᴇᴅ ᴏɴ  : ᴀʟʟ ᴡᴇʙ\n‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ5.2 [sᴛᴀʙʟᴇ]</b></blockquote>"""
     
-‣ Mʏ Nᴀᴍᴇ : <a href='https://t.me/JiraiyaFilter_Bot'>Jɪʀᴀɪʏᴀ Fɪʟᴛᴇʀ Bᴏᴛ</a>
-‣ Mʏ Bᴇsᴛ Fʀɪᴇɴᴅ : <a href='tg://settings'>Tʜɪs Pᴇʀsᴏɴ</a> 
-‣ Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/KuttyAdmin_Bot'>Ƙυƚƚყ</a> 
-‣ Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a> 
-‣ Lᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a> 
-‣ Dᴀᴛᴀ Bᴀsᴇ : <a href='https://www.mongodb.com/'>Mᴏɴɢᴏ Dʙ</a> 
-‣ Bᴏᴛ Sᴇʀᴠᴇʀ : <a href='https://heroku.com'>Hᴇʀᴏᴋᴜ</a> 
-‣ Bᴜɪʟᴅ Sᴛᴀᴛᴜs : ᴠ2.7.2 [Sᴛᴀʙʟᴇ]</b>"""
     
     CHANNELS = """
 <b>⚡ Gʀᴏᴜᴘs & Cʜᴀɴɴᴇʟs Iɴғᴏ ⚡ 
