@@ -1529,7 +1529,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
                     InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', callback_data="channels")
+                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', callback_data='JoinUᴘᴅᴀᴛᴇs')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1769,21 +1769,41 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
 
     #jisshu
-    elif query.data == "channels":
+    elif query.data == "JoinUᴘᴅᴀᴛᴇs":
         buttons = [[
-            InlineKeyboardButton('⚜️ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ⚜️', url='https://t.me/Kutty_LinkZz')
+            InlineKeyboardButton('🫵 SUBSCRIBE 🫵', url="https://youtube.com/@JISSHU-BOTS"),
         ],[
-            InlineKeyboardButton('🔍 Gʀᴏᴜᴘ¹', url='https://t.me/KuttyLinkZzRequest'),
-            InlineKeyboardButton('Gʀᴏᴜᴘ² 🔎', url='https://t.me/KuttyLinkZzRequest')
+            InlineKeyboardButton('🍀 Movie Search Group 🍀', url="https://t.me/+ZjmlLeuGGak5Yjhl")
         ],[
-            InlineKeyboardButton('✉️ Rᴇǫᴜᴇꜱᴛ Gʀᴏᴜᴘ ✉️', url='https://t.me/+P-p5yMKb3k03OGRl')
+            InlineKeyboardButton('🍂 Movie channel 🍂', url="https://t.me/+Fxa4IrH6obY4MWFl")
         ],[
-            InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/KuttySupport')
+            InlineKeyboardButton('🍁 Bots Update Channel 🍁', url="https://t.me/JISSHU_BOTS")
+        ],[
+            InlineKeyboardButton('🥀 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 🥀', url=GRP_LNK),
+        ],[
+            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
+        ],[
+            InlineKeyboardButton('❗ Disclaimer ❗', callback_data='Disclaimer')
         ]]
-        reply_markup = InlinekeyboardMarkup(buttons)
+        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.CHANNELS.format(query.from_user.mention),
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS_JOIN))
+        )
+        await query.message.edit_text(
+            text=script.JOINUPDATES_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
