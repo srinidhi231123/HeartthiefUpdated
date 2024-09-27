@@ -107,13 +107,13 @@ NO_PORT = bool(environ.get('9001', True))
 APP_NAME = None
 if 'DYNO' in environ:
     ON_HEROKU = True
-    APP_NAME = environ.get('hostingup.in')
+    APP_NAME = environ.get('APP_NAME')
 else:
     ON_HEROKU = True
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME
-URL = "http://bots.hostingup.icu:9001/".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "http://bots.hostingup.icu:9001/".format(FQDN, PORT)
+URL = "https://heartfilter-bot.koyeb.app/".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://heartfilter-bot.koyeb.app/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -128,9 +128,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "http://bots.hostingup.icu:9001/".format(FQDN)
+    URL = "https://heartfilter-bot.koyeb.app/".format(FQDN)
 else:
-    URL = "http://bots.hostingup.icu:9001/".format(FQDN)
+    URL = "https://heartfilter-bot.koyeb.app/".format(FQDN)
 
 
 # Online Stream and Download
