@@ -179,7 +179,6 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
     message = quer_y.message.reply_to_message or quer_y.message
     if imdb:
         plot_en = imdb['plot']
-        plot_hi = translator.translate(plot_en, src='en', dest='hi').text
 
         caption = IMDB_TEMPLATE.format(
             query = imdb['title'],
@@ -207,7 +206,7 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
             year = imdb['year'],
             genres = imdb['genres'],
             poster = imdb['poster'],
-            plot = plot_hi,  # Use translated plot here
+            plot = plot_en,  # Use translated plot here
             rating = imdb['rating'],
             url = imdb['url'],
             **locals()
