@@ -132,11 +132,12 @@ async def who_is(client, message):
     await status_message.delete()
 
 IMDB_TEMPLATE = """<b>
-🍿 Title: {title}
-🎃 Genres: {genres}
-📆 Year: {year}
-⭐ Rating: {rating} / 10
-🔉 Audio: #Hindi #English
+🎬 Title : {title}
+📆 Year : {year}
+🎭 Genres : {genres}
+🌟 Rating : {rating} / 10
+🔊 Language : #Tamil #Multilanguage
+💿 Quality : #HDRip
 
 📕 Story: {plot}</b>
 """
