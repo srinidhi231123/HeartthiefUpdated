@@ -7,6 +7,11 @@ async def set_commands(client, message):
     commands = [
         BotCommand("alive", "To Check Bot is Alive"),
         BotCommand("start", "To start the bot"),
+        BotCommand("connect", "ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ"),
+        BotCommand("request", "sᴇɴᴅ ᴀ Mᴏᴠɪᴇ/Sᴇʀɪᴇs ʀᴇᴏ‌ᴜᴇsᴛ ᴛᴏ ʙᴏᴛ ᴀᴅᴍɪɴs. ( ᴏɴʟʏ ᴡᴏʀᴋs ᴏɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ )"),
+        BotCommand("broadcast", "ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴀʟʟ ᴜꜱᴇʀꜱ."),
+        BotCommand("grp_broadcast", "ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀʟʟ ᴄᴏɴɴᴇᴄᴛᴇᴅ ɢʀᴏᴜᴘs."),
+        BotCommand("imdb", "ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ɪᴍᴅʙ ꜱᴏᴜʀᴄᴇ"),
         BotCommand("plan", "ᴄʜᴇᴄᴋ ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀꜱʜɪᴘ ᴘʟᴀɴꜱ"),
         BotCommand("most", "To Get Most Searches Button List"),
         BotCommand("trend", "To Get Top Trending Button List"),
@@ -20,7 +25,6 @@ async def set_commands(client, message):
         BotCommand("id", "ɢᴇᴛ ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ"),
         BotCommand("info", "ɢᴇᴛ ᴜꜱᴇʀ ɪɴꜰᴏ"),
         BotCommand("font", "To Generate Cool Fonts"),
-        BotCommand("connect", "ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ"),
         BotCommand("settings", "ᴄʜᴀɴɢᴇ ʙᴏᴛ ꜱᴇᴛᴛɪɴɢꜱ"),
         BotCommand("admin_cmd", "Bot Admin All Commands")
     ]
