@@ -1926,7 +1926,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    
+        
+    elif query.data == "img":
+        buttons = [[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.TELE_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
 
     elif query.data == "help":
         buttons = [[
@@ -1934,6 +1944,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton('☆ Uꜱᴇʀ ☆', callback_data='users'),
             InlineKeyboardButton('ﾒ Gʀᴏᴜᴘ ﾒ', callback_data='group')
+        ], [
+            InlineKeyboardButton('🖼️ Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ 🔗', callback_data='img') 
         ], [
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
@@ -1965,10 +1977,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
  
     elif query.data == "Source":
         buttons = [[
-            InlineKeyboardButton('Repo', url='http://postimg.cc/VrX98nPs')
+            InlineKeyboardButton('Repo', url='https://envs.sh/S9C.jpg')
         ],[
-            InlineKeyboardButton('• 𝗕𝗮𝗰𝗸 •', callback_data='about'),
-            InlineKeyboardButton('• 𝗖𝗹𝗼𝘀𝗲 •', callback_data='close_data')
+            InlineKeyboardButton('⇇ ʙᴀᴄᴋ ', callback_data='about'),
+            InlineKeyboardButton('⇋ ᴄʟᴏsᴇ ⇋', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
