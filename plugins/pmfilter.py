@@ -1989,11 +1989,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
              InlineKeyboardButton('🖼️ Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ 🔗', callback_data='img'),
          ], [ 
-             InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker'),   
-             InlineKeyboardButton('ꜰɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='store_file') 
+             InlineKeyboardButton('📜 Sᴛɪᴄᴋᴇʀ-Iᴅ 🆔', callback_data='sticker'),   
+             InlineKeyboardButton('🗃️ Fɪʟᴇ Sᴛᴏʀᴇ 📥', callback_data='store_file') 
         ],  [ 
-             InlineKeyboardButton('Font', callback_data='font'),   
-             InlineKeyboardButton('Repo', callback_data='repo') 
+             InlineKeyboardButton('🆎 Fᴏɴᴛ Cʜᴀɴɢᴇ🆒 ', callback_data='font'),   
+             InlineKeyboardButton('☢️ Rᴇᴘᴏ Sᴇᴀʀᴄʜ ⚠️', callback_data='repo') 
         ],  [
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('Sᴛᴀᴛᴜs ⚒️', callback_data='stats')
@@ -2065,7 +2065,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('☆ Uꜱᴇʀ ☆', callback_data='users'),
             InlineKeyboardButton('ﾒ Gʀᴏᴜᴘ ﾒ', callback_data='group')
         ], [
-            InlineKeyboardButton('🖼️ Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ 🔗', callback_data='img'),
             InlineKeyboardButton('♻️ Exᴛʀᴀ Fᴇᴀᴛᴜʀᴇꜱ ✅', callback_data='extra')
         ], [
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
@@ -2133,7 +2132,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "stats":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='extra'),
             InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -2153,7 +2152,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "rfrsh":
         await query.answer("ꜰᴇᴛᴄʜɪɴɢ ᴍᴏɴɢᴏ-ᴅʙ ᴅᴀᴛᴀʙᴀꜱᴇ...")
         buttons = [[
-            InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='about'),
+            InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='extra'),
             InlineKeyboardButton('⟲ ʀᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
