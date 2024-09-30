@@ -1988,15 +1988,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "extra":
         buttons = [[
              InlineKeyboardButton('🖼️ Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ 🔗', callback_data='img'),
-         ], [ 
-             InlineKeyboardButton('sᴛɪᴄᴋᴇʀ-Iᴅ', callback_data='sticker'),   
-             InlineKeyboardButton('Fɪʟᴇ Sᴛᴏʀᴇ', callback_data='store_file') 
-        ],  [ 
-             InlineKeyboardButton('Font', callback_data='font'),   
-             InlineKeyboardButton('Repo', callback_data='repo') 
-        ],  [
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('Sᴛᴀᴛᴜs ⚒️', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
