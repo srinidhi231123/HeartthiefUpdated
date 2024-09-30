@@ -20,7 +20,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "7655337781:AAHpIEL4TUtioqxZPCnKELfr1nlKlkH
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS', 'https://envs.sh/qbD.jpg https://envs.sh/qi-.jpg https://envs.sh/qbQ.jpg https://envs.sh/qbE.jpg https://envs.sh/qbh.jpg https://envs.sh/qbu.jpg https://envs.sh/qbF.jpg https://envs.sh/qbe.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://envs.sh/Sau.jpg https://envs.sh/Sat.jpg https://envs.sh/Sai.jpg https://envs.sh/Sab.jpg https://envs.sh/Saq.jpg https://envs.sh/SaS.jpg https://envs.sh/SaW.jpg https://envs.sh/SaB.jpg https://envs.sh/SaI.jpg https://envs.sh/San.jpg https://envs.sh/SaT.jpg https://envs.sh/Sap.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://envs.sh/qbB.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/1f774a8adb603614fc385.mp4")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://envs.sh/wRe.jpg'))
