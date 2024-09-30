@@ -287,7 +287,7 @@ Requested by : {message.from_user.mention}</b>
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v5.2 [ Sᴛᴀʙʟᴇ ]</code>
 
-Bʏ @HeartThieft_bot</b>"""
+Bʏ @Itzheart_bot</b>"""
 
     LOGO = """
 
