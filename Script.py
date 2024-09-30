@@ -279,6 +279,22 @@ Requested by : {message.from_user.mention}</b>
  ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ɪꜱ ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ɢᴏᴜᴘꜱ ᴀɴᴅ ᴘᴍꜱ 
  ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ʙʏ ᴇᴠᴇʀʏᴏɴᴇ</b>"""
 
+    EXTRAMOD_TXT = """<b>Exᴛʀᴀ Mᴏᴅᴜʟᴇs</b>
+<b>ɴᴏᴛᴇ:</b>
+my features Stay here new features coming soon...  
+ <b>✯ Maintained by : <a href=https://t.me/HeartThieft_bot>☢【𝐇ᴇᴀʀᴛ 𝐓ʜɪᴇꜰ】☢</a></b> 
+  
+ ./song - Download any song [<code>example /song vaa vaathi song</code>] 
+  
+ ./img - <code>Image To Link generator sen under 5MB video or photo I give telegraph link</code> 
+  
+ ./tts - <code>This command usage text to voice converter</code> 
+  
+ ./video - This command usage any YouTube video download hd [<code>example /video https://youtu.be/Aiue8PMuD-k</code>]
+
+ ./font - This command usage stylish and cool font generator [<code>example /font hi</code>]"""
+    
+
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
 
