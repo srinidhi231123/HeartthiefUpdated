@@ -1989,8 +1989,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
              InlineKeyboardButton('🖼️ Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ 🔗', callback_data='img'),
          ], [ 
-             InlineKeyboardButton('📜 Sᴛɪᴄᴋᴇʀ-Iᴅ 🆔', callback_data='sticker'),   
-             InlineKeyboardButton('🗃️ Fɪʟᴇ Sᴛᴏʀᴇ 📥', callback_data='store_file') 
+             InlineKeyboardButton('sᴛɪᴄᴋᴇʀ-Iᴅ', callback_data='sticker'),   
+             InlineKeyboardButton('Fɪʟᴇ Sᴛᴏʀᴇ', callback_data='store_file') 
         ],  [ 
              InlineKeyboardButton('🆎 Fᴏɴᴛ Cʜᴀɴɢᴇ 🆒 ', callback_data='font'),   
              InlineKeyboardButton('☢️ Rᴇᴘᴏ Sᴇᴀʀᴄʜ ⚠️', callback_data='repo') 
