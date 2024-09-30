@@ -293,7 +293,9 @@ my features Stay here new features coming soon...
  ./video - This command usage any YouTube video download hd [<code>example /video https://youtu.be/Aiue8PMuD-k</code>]
 
  ./font - This command usage stylish and cool font generator [<code>example /font hi</code>]"""
-    
+
+    REPO_TXT = """
+<b>/repo - ꜱᴀɴᴅ ᴍᴇ ɴᴀᴍᴇ ᴡʜɪᴄʜ ᴛʏᴘᴇ ʀᴇᴘᴏ ʏᴏᴜ ɴᴇᴇᴅ.</b>"""
 
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
