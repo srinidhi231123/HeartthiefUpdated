@@ -11,6 +11,7 @@
  shortzy 
  datetime 
  pytz 
+ Pyrogram 2.3.43
  aiohttp
 #---jisshu mod----#
  googletrans==4.0.0-rc1
