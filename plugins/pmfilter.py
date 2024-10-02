@@ -2309,6 +2309,40 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json') 
         ],  [
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='extra'),
+            InlineKeyboardButton('Nᴇxᴛ ⋟', callback_data='forward1')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="𝑾𝒂𝒊𝒕...."
+        )
+        await query.message.edit_text(
+            text="𝑳𝒐𝒂𝒅𝒊𝒏𝒈......"
+        )
+        await query.message.edit_text(
+            text="𝑫𝒐𝒏𝒆 ✅"
+        )
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.HELP_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "forward1":
+        buttons = [[
+             InlineKeyboardButton('ɢᴏᴏɢʟᴇ ᴛʀᴀɴꜱʟᴀᴛᴇʀ', callback_data='ytdl'),
+        ],  [ 
+             InlineKeyboardButton('ᴛᴇxᴛ ᴛᴏ ꜱᴩᴇᴇᴄʜ', callback_data='filters'),   
+             InlineKeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share') 
+        ],  [ 
+             InlineKeyboardButton('ꜱᴏɴɢ ', callback_data='song'),   
+             InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json') 
+        ],  [
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='extra'),
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -2352,7 +2386,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.YTDL_TXT,
+            text=script.YTDL_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -2378,7 +2412,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.SHARE_TXT,
+            text=script.SHARE_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -2403,7 +2437,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.SONG_TXT,
+            text=script.SONG_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -2429,7 +2463,59 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.JSON_TXT,
+            text=script.JSON_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "tts":
+        buttons = [[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='forward1')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="𝑾𝒂𝒊𝒕...."
+        )
+        await query.message.edit_text(
+            text="𝑳𝒐𝒂𝒅𝒊𝒏𝒈......"
+        )
+        await query.message.edit_text(
+            text="𝑫𝒐𝒏𝒆 ✅"
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.TTS_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "gtrl":
+        buttons = [[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='forward1')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="𝑾𝒂𝒊𝒕...."
+        )
+        await query.message.edit_text(
+            text="𝑳𝒐𝒂𝒅𝒊𝒏𝒈......"
+        )
+        await query.message.edit_text(
+            text="𝑫𝒐𝒏𝒆 ✅"
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.GTRANS_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
