@@ -2361,15 +2361,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "forward1":
         buttons = [[
-             InlineKeyboardButton('ɢᴏᴏɢʟᴇ ᴛʀᴀɴꜱʟᴀᴛᴇʀ', callback_data='ytdl'),
+             InlineKeyboardButton('ɢᴏᴏɢʟᴇ ᴛʀᴀɴꜱʟᴀᴛᴇʀ', callback_data='gtrl'),
         ],  [ 
-             InlineKeyboardButton('ᴛᴇxᴛ ᴛᴏ ꜱᴩᴇᴇᴄʜ', callback_data='filters'),   
+             InlineKeyboardButton('ᴛᴇxᴛ ᴛᴏ ꜱᴩᴇᴇᴄʜ', callback_data='tts'),   
              InlineKeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share') 
         ],  [ 
              InlineKeyboardButton('ꜱᴏɴɢ ', callback_data='song'),   
              InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json') 
         ],  [
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='extra'),
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='forward'),
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
