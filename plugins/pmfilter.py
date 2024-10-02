@@ -2014,6 +2014,60 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
+    elif query.data == "imd":
+        buttons = [[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='extra')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="𝑾𝒂𝒊𝒕...."
+        )
+        await query.message.edit_text(
+            text="𝑳𝒐𝒂𝒅𝒊𝒏𝒈......"
+        )
+        await query.message.edit_text(
+            text="𝑫𝒐𝒏𝒆 ✅"
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.IMD_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "genpas":
+        buttons = [[
+            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='extra')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="𝑾𝒂𝒊𝒕...."
+        )
+        await query.message.edit_text(
+            text="𝑳𝒐𝒂𝒅𝒊𝒏𝒈......"
+        )
+        await query.message.edit_text(
+            text="𝑫𝒐𝒏𝒆 ✅"
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.GEN_PASS.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
     elif query.data == "font":
         buttons = [[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='extra')
@@ -2217,7 +2271,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('🆎 Fᴏɴᴛ Cʜᴀɴɢᴇ 🆒 ', callback_data='font'),   
              InlineKeyboardButton('☢️ Rᴇᴘᴏ Sᴇᴀʀᴄʜ ⚠️', callback_data='repo') 
         ],  [
-             InlineKeyboardButton('Fsub', callback_data='fsub'),
+             InlineKeyboardButton('🔎 Iᴍᴅʙ 🔍', callback_data='imd'),
+             InlineKeyboardButton('🪄 Gᴇɴᴇʀᴀᴛᴇ Pᴀꜱꜱᴡᴏʀᴅꜱ 🖍️', callback_data='genpas') 
         ],  [
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('Nᴇxᴛ ⋟', callback_data='forward')
