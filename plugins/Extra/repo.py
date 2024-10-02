@@ -1,6 +1,6 @@
-# Don't Remove Credit @movie_file_20
-# Subscribe YouTube Channel For Amazing Bot @movie_file_20
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit @Heart_thieft
+# Subscribe YouTube Channel For Amazing Bot @Itzheart_bot
+# Ask Doubt on telegram@Heart_thieft
 
 
 import logging
@@ -35,7 +35,7 @@ async def git(Kashmira, message):
 
 <b>Open Issues :</b> <i>{qw.get("open_issues")}</i>
 
-<b>Powed by :</b> @IM_JISSHU
+<b>Powed by :</b> @HeartThieft_bot
 
 """
         if qw.get("description"):
