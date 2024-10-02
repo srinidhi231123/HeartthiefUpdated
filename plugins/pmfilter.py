@@ -2290,7 +2290,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "extra":
         buttons = [[
-             InlineKeyboardButton('🖼️ Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ 🔗', callback_data='img'),
+            InlineKeyboardButton('🪄 Gᴇɴᴇʀᴀᴛᴇ Pᴀꜱꜱᴡᴏʀᴅꜱ 🖍️', callback_data='genpas')
         ],  [ 
              InlineKeyboardButton('📜 Sᴛɪᴄᴋᴇʀ-Iᴅ 🆔', callback_data='sticker'),   
              InlineKeyboardButton('🗃️ Fɪʟᴇ Sᴛᴏʀᴇ 📥', callback_data='store_file') 
@@ -2299,7 +2299,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('☢️ Rᴇᴘᴏ Sᴇᴀʀᴄʜ ⚠️', callback_data='repo') 
         ],  [
              InlineKeyboardButton('🔎 Iᴍᴅʙ 🔍', callback_data='imd'),
-             InlineKeyboardButton('🪄 Gᴇɴᴇʀᴀᴛᴇ Pᴀꜱꜱᴡᴏʀᴅꜱ 🖍️', callback_data='genpas') 
+             InlineKeyboardButton('🖼️ Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ 🔗', callback_data='img') 
         ],  [
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('Nᴇxᴛ ⋟', callback_data='forward')
@@ -2361,10 +2361,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "forward1":
         buttons = [[
-             InlineKeyboardButton('ɢᴏᴏɢʟᴇ ᴛʀᴀɴꜱʟᴀᴛᴇʀ', callback_data='gtrl'),
+             InlineKeyboardButton('🈵 Gᴏᴏɢʟᴇ Tʀᴀɴꜱʟᴀᴛᴇʀ 🆎', callback_data='gtrl'),
         ],  [ 
-             InlineKeyboardButton('ᴛᴇxᴛ ᴛᴏ ꜱᴩᴇᴇᴄʜ', callback_data='tts'),   
-             InlineKeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share') 
+             InlineKeyboardButton('📄 Tᴇxᴛ Tᴏ Sᴩᴇᴇᴄʜ 🔊', callback_data='tts'),   
+             InlineKeyboardButton('📨 Sʜᴀʀᴇ Tᴇxᴛ 📝', callback_data='share') 
         ],  [ 
              InlineKeyboardButton('ꜱᴏɴɢ ', callback_data='song'),   
              InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json') 
