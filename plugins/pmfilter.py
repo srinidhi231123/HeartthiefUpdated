@@ -18,6 +18,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
 from utils import get_size, is_req_subscribed, get_poster, search_gagala, temp, get_settings, save_group_settings, get_shortlink, get_tutorial, send_all, get_cap, imdb
+from .Extra.checkFsub import is_user_fsub
 from fuzzywuzzy import process
 from database.users_chats_db import db
 from database.ia_filterdb import Media, get_file_details, get_search_results, get_bad_files
@@ -1984,16 +1985,30 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+
+    elif query.data == "fsub":
+        #add back button
+        buttons = [[
+            InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')],
+            [InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='extra')]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.FSUB_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
         
     elif query.data == "extra":
         buttons = [[
              InlineKeyboardButton('🖼️ Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ 🔗', callback_data='img'),
-         ], [ 
+        ],  [ 
              InlineKeyboardButton('📜 Sᴛɪᴄᴋᴇʀ-Iᴅ 🆔', callback_data='sticker'),   
              InlineKeyboardButton('🗃️ Fɪʟᴇ Sᴛᴏʀᴇ 📥', callback_data='store_file') 
         ],  [ 
              InlineKeyboardButton('🆎 Fᴏɴᴛ Cʜᴀɴɢᴇ 🆒 ', callback_data='font'),   
              InlineKeyboardButton('☢️ Rᴇᴘᴏ Sᴇᴀʀᴄʜ ⚠️', callback_data='repo') 
+        ],  [
+             InlineKeyboardButton('Fsub', callback_data='fsub'),
         ],  [
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('Sᴛᴀᴛᴜs ⚒️', callback_data='stats')
