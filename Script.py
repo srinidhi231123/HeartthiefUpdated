@@ -17,29 +17,52 @@ class script(object):
 ★ ғʀᴇᴇ & ᴇᴀsʏ ᴛᴏ ᴜsᴇ.
 ★ 𝟸𝟺x𝟽 sᴇʀᴠɪᴄᴇs ᴀᴠᴀɪʟᴀʙʟᴇ.</b>"""
     
-    STATUS_TXT = """<b>    
-★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
-★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
-★ Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code>
-★ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{}</code>
-★ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code>
-</b>"""
+    STATUS_TXT = """<b><u>🗃 ᴅᴀᴛᴀʙᴀsᴇ 1 🗃</u>
 
-    LOG_TEXT_G = """#NewGroup
-    
-Gʀᴏᴜᴘ = {}
-Iᴅ = <code>{}</code>
-Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
+» ᴛᴏᴛᴀʟ ᴜsᴇʀs - <code>{}</code>
+» ᴛᴏᴛᴀʟ ɢʀᴏᴜᴘs - <code>{}</code>
+» ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ - <code>{} / {}</code>
+
+<u>🗳 ᴅᴀᴛᴀʙᴀsᴇ 2 🗳</u></b>
+
+» ᴛᴏᴛᴀʟ ꜰɪʟᴇs - <code>{}</code>
+» ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ - <code>{} / {}</code>
+
+<u>🤖 ʙᴏᴛ ᴅᴇᴛᴀɪʟs 🤖</u>
+
+» ᴜᴘᴛɪᴍᴇ - <code>{}</code>
+» ʀᴀᴍ - <code>{}%</code>
+» ᴄᴘᴜ - <code>{}%</code></b>"""
+
+    REQUEST_TXT = """<b>📜 ᴜꜱᴇʀ - {}
+📇 ɪᴅ - <code>{}</code>
+
+🎁 ʀᴇǫᴜᴇꜱᴛ ᴍꜱɢ - <code>{}</code></b>"""  
+
+    SUPPORT_GRP_MOVIE_TEXT = '''<b>ʜᴇʏ {}
+
+ɪ ғᴏᴜɴᴅ {} ʀᴇsᴜʟᴛs 🎁,
+ʙᴜᴛ ɪ ᴄᴀɴ'ᴛ sᴇɴᴅ ʜᴇʀᴇ 🤞🏻
+ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴏᴜʀ ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ ᴛᴏ ɢᴇᴛ ✨</b>'''
+
+    LOG_TEXT_G = """#New_Group {}
+
+Group name - {}
+Id - <code>{}</code>
+Group username - @{}
+Group link - {}
+Total members - <code>{}</code>
+User - {}
 Aᴅᴅᴇᴅ Bʏ - {}
 
-Bʏ @HeartThieft_bot """
+Bʏ @Itzheart_bot """
 
-    LOG_TEXT_P = """#NewUser
-    
-Iᴅ - <code>{}</code>
-Nᴀᴍᴇ - {}
+    LOG_TEXT_P = """<b>#New_User {}
 
-Bʏ @HeartThieft_bot """
+≈ ɪᴅ:- <code>{}</code>
+≈ ɴᴀᴍᴇ:- {}</b>
+
+Bʏ @Itzheart_bot """
 
     ALRT_TXT = """Hᴇʟʟᴏ {},
 Tʜɪꜱ Iꜱ Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇꜱᴛ,
