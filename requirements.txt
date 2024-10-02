@@ -39,7 +39,7 @@
  wget 
  pytz
  aiofiles
- telegraph
+ telegraph==2.2.0 
  dnspython==2.3.0
  ### googletrans==4.0.0-rc1 ###
  python-decouple
@@ -50,7 +50,15 @@
  pyshorteners
  pyromod
  colorama
-
-
+ gTTS==2.3.1 
+ openai==0.25.0
+#---ytdl----# 
+ffmpeg
+youtube_search
+youtube-search-python==1.4.6
+yt-dlp
+youtube-dl
+requests 
+ytthumb
 
 
