@@ -217,6 +217,13 @@ class Database:
             return user_data.get("has_free_trial", False)
         return False
 
+    async def get_pm_search_status(self, bot_id):
+        bot = await self.botcol.find_one({'id': bot_id})
+        if bot and bot.get('bot_pm_search'):
+            return bot['bot_pm_search']
+        else:
+            return IS_PM_SEARCH
+
     async def give_free_trail(self, userid):        
         user_id = userid
         seconds = 5*60         
