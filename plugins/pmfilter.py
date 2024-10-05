@@ -1778,8 +1778,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
-        ],[
-            InlineKeyboardButton('❗ Disclaimer ❗', callback_data='disclaimer')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -2073,7 +2071,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
-    elif query.data == "forward":
+    elif query.data == "forw":
         buttons = [[
              InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl'),
         ],  [ 
@@ -2084,7 +2082,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json') 
         ],  [
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='extra'),
-            InlineKeyboardButton('Nᴇxᴛ ⋟', callback_data='forward1')
+            InlineKeyboardButton('Nᴇxᴛ ⋟', callback_data='forw1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -2098,7 +2096,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
-    elif query.data == "forward1":
+    elif query.data == "forw1":
         buttons = [[
              InlineKeyboardButton('🈵 Gᴏᴏɢʟᴇ Tʀᴀɴꜱʟᴀᴛᴇʀ 🆎', callback_data='gtrl'),
         ],  [ 
@@ -2275,6 +2273,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('☆ Uꜱᴇʀ ☆', callback_data='users'),
             InlineKeyboardButton('ﾒ Gʀᴏᴜᴘ ﾒ', callback_data='group')
         ], [
+            InlineKeyboardButton(' STATUS', callback_data='stats')
+        ], [
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -2317,7 +2317,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
  
     elif query.data == "Source":
         buttons = [[
-            InlineKeyboardButton('Repo', url='https://envs.sh/S9C.jpg')
+            InlineKeyboardButton('Repo', url='https://gplinks.co/3zLINic0')
         ],[
             InlineKeyboardButton('⇇ ʙᴀᴄᴋ ', callback_data='about'),
             InlineKeyboardButton('⇋ ᴄʟᴏsᴇ ⇋', callback_data='close_data')
