@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://graph.org/file/18ea3932a8d72f6753529.jpg" alt="Jisshu-Auto-filter">
+  <img src="https://envs.sh/BJq.jpg" alt="Heart_Thief-Auto-filter">
 </p>
 <h1 align="center">
-  <a href="https://telegram.me/JISSHU_BOTS">Jisshu Auto filter</a>
+  <a href="https://telegram.me/HeartThieft_bot">Heart_Thief Auto filter</a>
 </h1>
 <img src="https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/resources/hr.gif"/>
 
