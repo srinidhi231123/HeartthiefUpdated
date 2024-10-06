@@ -1406,27 +1406,3 @@ async def refer(bot, message):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
     )
-@Client.on_message(filters.private & filters.command("pm_search_on"))
-async def set_pm_search_on(client, message):
-    user_id = message.from_user.id
-    bot_id = client.me.id
-    if user_id not in ADMINS:
-        await message.delete()
-        return
-    
-    await db.update_pm_search_status(bot_id, enable=True)
-    await message.reply_text("<b><i>✅️ ᴘᴍ ꜱᴇᴀʀᴄʜ ᴇɴᴀʙʟᴇᴅ, ꜰʀᴏᴍ ɴᴏᴡ ᴜꜱᴇʀꜱ ᴀʙʟᴇ ᴛᴏ ꜱᴇᴀʀᴄʜ ᴍᴏᴠɪᴇ ɪɴ ʙᴏᴛ ᴘᴍ.</i></b>")
-
-@Client.on_message(filters.private & filters.command("pm_search_off"))
-async def set_pm_search_off(client, message):
-    user_id = message.from_user.id
-    bot_id = client.me.id
-    if user_id not in ADMINS:
-        await message.delete()
-        return
-    
-    await db.update_pm_search_status(bot_id, enable=False)
-    await message.reply_text("<b><i>❌️ ᴘᴍ ꜱᴇᴀʀᴄʜ ᴅɪꜱᴀʙʟᴇᴅ, ꜰʀᴏᴍ ɴᴏᴡ ɴᴏ ᴏɴᴇ ᴄᴀɴ ᴀʙʟᴇ ᴛᴏ ꜱᴇᴀʀᴄʜ ᴍᴏᴠɪᴇ ɪɴ ʙᴏᴛ ᴘᴍ.</i></b>")
-    
-# https://t.me/JISSHU_BOTS
-# https://t.me/Jisshu_support
