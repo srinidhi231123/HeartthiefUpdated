@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://envs.sh/BJq.jpg" alt="Heart_Thief-Auto-filter">
+  <img src="https://envs.sh/BJq.jpg" alt="ʜᴇᴀʀᴛ ᴛʜɪᴇꜰ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ">
 </p>
 <h1 align="center">
-  <a href="https://telegram.me/HeartThieft_bot">Heart_Thief Auto filter</a>
+  <a href="https://telegram.me/Heart_Thieft">ʜᴇᴀʀᴛ ᴛʜɪᴇꜰ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ</a>
 </h1>
 <img src="https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/resources/hr.gif"/>
 
@@ -146,7 +146,7 @@ Use these settings when adding a monitor:</b>
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/Jisshubot/Jisshu-filter-bot
+git clone {your repo link}
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot
@@ -159,17 +159,14 @@ python3 bot.py
 
 
 ## **Thanks to** 
- - <b>Thanks To [Jisshu_bots](https://t.me/JISSHU_BOTS) To Modify And Add Amazing Feature In The Repo
+ - <b>Thanks To [ʜᴇᴀʀᴛ_ᴛʜɪᴇꜰᴛ](https://t.me/HEART_THIEFT) To Modify And Add Amazing Feature In The Repo
  - Thanks To [HP](https://github.com/HarshalPurohitEdits/TheMovieProviderBot) For Base Repo
- - Thanks To [Mr.SPIDY](https://t.me/Mr_SPIDY) To Refer Future Code</b>
- - Thanks To [Zoro](https://t.me/JOYBOY_ZORO) Your ideas have been a huge help in improving this project. Thanks for your valuable input!
- - Thanks To [ɪᴛ'ꜱ ʟᴜғғʏ](https://t.me/CoderluffyTG) For fixing key errors and making the bot better. Your help has been truly appreciated!
  - Thanks To All Everyone In This Journey
  <img src="https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/resources/hr.gif"/>
 
 <img src="https://github.com/Jisshubot/Jisshubot/blob/master/resources/hr.gif"/>
 <h1> <img src="https://graph.org/file/9b3bac6be700d65e96c7b.jpg" width="70px" style="border-radius: 50%"> ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ </h1>
   
-[<img src="https://raw.githubusercontent.com/Jisshubot/Jisshubot/master/resources/telegram_icon.png" width="60px">](https://telegram.im/@JISSHU_BOTS) [<img src="https://raw.githubusercontent.com/AnonymousX1025/AnonymousX1025/master/resources/github_icon.png" width="60px">](https://github.com/Jisshubot) [<img src="https://raw.githubusercontent.com/AnonymousX1025/AnonymousX1025/master/resources/youtube_icon.png" width="60px">](https://www.youtube.com/@JISSHU-BOTS) [<img src="https://github.com/AnonymousX1025/AnonymousX1025/blob/master/resources/insta_icon.png" width="60px">](https://instagram.com/Zishan_khan565)
+[<img src="https://raw.githubusercontent.com/Jisshubot/Jisshubot/master/resources/telegram_icon.png" width="60px">](https://telegram.im/Heart_thieft) [<img src="https://raw.githubusercontent.com/AnonymousX1025/AnonymousX1025/master/resources/github_icon.png" width="60px">](https://github.com/) [<img src="https://raw.githubusercontent.com/AnonymousX1025/AnonymousX1025/master/resources/youtube_icon.png" width="60px">](https://www.youtube.com/Heart_thieft) [<img src="https://github.com/AnonymousX1025/AnonymousX1025/blob/master/resources/insta_icon.png" width="60px">](https://instagram.com/)
 
 <img src="https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/resources/hr.gif"/>
