@@ -2054,9 +2054,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],  [
              InlineKeyboardButton('🔎 Iᴍᴅʙ 🔍', callback_data='imd'),
              InlineKeyboardButton('🖼️ Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ 🔗', callback_data='img') 
+        ],  [ 
+             InlineKeyboardButton('📁 Fɪʟᴛᴇʀꜱ 📁', callback_data='filters'),   
+             InlineKeyboardButton('📨 Sʜᴀʀᴇ Tᴇxᴛ 📝', callback_data='share') 
+        ],  [ 
+             InlineKeyboardButton('🎶 Sᴏɴɢ 🎶', callback_data='song'),   
+             InlineKeyboardButton('📜 ᴊ-ꜱᴏɴ', callback_data='json') 
+        ],  [ 
+             InlineKeyboardButton('🈵 Gᴏᴏɢʟᴇ Tʀᴀɴꜱʟᴀᴛᴇʀ 🆎', callback_data='gtrl'),   
+             InlineKeyboardButton('📄 Tᴇxᴛ Tᴏ Sᴩᴇᴇᴄʜ 🔊', callback_data='tts') 
         ],  [
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('Nᴇxᴛ ⋟', callback_data='forward')
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -2076,7 +2084,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl'),
         ],  [ 
              InlineKeyboardButton('ꜰɪʟᴛᴇʀꜱ', callback_data='filters'),   
-             InlinekeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share') 
+             InlineKeyboardButton('📨 Sʜᴀʀᴇ Tᴇxᴛ 📝', callback_data='share') 
         ],  [ 
              InlineKeyboardButton('ꜱᴏɴɢ ', callback_data='song'),   
              InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json') 
