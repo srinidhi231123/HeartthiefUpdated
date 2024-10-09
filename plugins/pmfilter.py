@@ -2054,17 +2054,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],  [
              InlineKeyboardButton('🔎 Iᴍᴅʙ 🔍', callback_data='imd'),
              InlineKeyboardButton('🖼️ Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ 🔗', callback_data='img') 
-        ],  [ 
-             InlineKeyboardButton('📁 Fɪʟᴛᴇʀꜱ 📁', callback_data='filters'),   
-             InlineKeyboardButton('📨 Sʜᴀʀᴇ Tᴇxᴛ 📝', callback_data='share') 
-        ],  [ 
-             InlineKeyboardButton('🎶 Sᴏɴɢ 🎶', callback_data='song'),   
-             InlineKeyboardButton('📜 ᴊ-ꜱᴏɴ', callback_data='json') 
-        ],  [ 
-             InlineKeyboardButton('🈵 Gᴏᴏɢʟᴇ Tʀᴀɴꜱʟᴀᴛᴇʀ 🆎', callback_data='gtrl'),   
-             InlineKeyboardButton('📄 Tᴇxᴛ Tᴏ Sᴩᴇᴇᴄʜ 🔊', callback_data='tts') 
         ],  [
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='start')
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('Nᴇxᴛ ⋟', callback_data='forward')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -2079,6 +2071,28 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
+    elif query.data == "forward1":
+        buttons = [[
+             InlineKeyboardButton('🈵 Gᴏᴏɢʟᴇ Tʀᴀɴꜱʟᴀᴛᴇʀ 🆎', callback_data='gtrl'),
+        ],  [ 
+             InlineKeyboardButton('📄 Tᴇxᴛ Tᴏ Sᴩᴇᴇᴄʜ 🔊', callback_data='tts') 
+        ],  [
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='forward'),
+            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.HELP_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        
     elif query.data == "forward":
         buttons = [[
              InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl'),
@@ -2105,33 +2119,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-
-    elif query.data == "forward1":
-        buttons = [[
-             InlineKeyboardButton('🈵 Gᴏᴏɢʟᴇ Tʀᴀɴꜱʟᴀᴛᴇʀ 🆎', callback_data='gtrl'),
-        ],  [ 
-             InlineKeyboardButton('📄 Tᴇxᴛ Tᴏ Sᴩᴇᴇᴄʜ 🔊', callback_data='tts'),   
-             InlineKeyboardButton('📨 Sʜᴀʀᴇ Tᴇxᴛ 📝', callback_data='share') 
-        ],  [ 
-             InlineKeyboardButton('ꜱᴏɴɢ ', callback_data='song'),   
-             InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json') 
-        ],  [
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='forward'),
-            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
+        
     elif query.data == "ytdl":
         buttons = [[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='forward')
