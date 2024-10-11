@@ -58,8 +58,10 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton("📌 ᴄᴏɴᴛᴀᴄᴛ ꜱᴜᴘᴘᴏʀᴛ 📌", url=f'https://t.me/cc_support_group')
-                                                                         ]]
+                                                                           InlineKeyboardButton("♨️ Gʀᴏᴜᴘ Rᴜʟᴇꜱ ♨️", callback_data="rlu")
+                                                                         ],[
+                                                                           InlineKeyboardButton('💫 Aᴅᴍɪɴ 💫', url="https://t.me/HeartThieft_bot")
+                                                                           ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
                 )
