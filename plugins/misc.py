@@ -139,7 +139,10 @@ IMDB_TEMPLATE = """<b>
 🔊 Language : #Tamil #Multilanguage
 💿 Quality : #HDRip
 
-📕 Story: {plot}</b>
+📕 Story: {plot}</b>\n\n
+<blockquote><a href="https://t.me/Movieprovidergroups">𝗨𝗣𝗟𝗢𝗔𝗗𝗘𝗗 ✅ 𝗖𝗟𝗜𝗖𝗞 & 𝗦𝗘𝗔𝗥𝗖𝗛 🔍</a></blockquote></b>"
+
+
 """
 # https://t.me/JISSHU_BOTS
 # https://t.me/Jisshu_support
