@@ -141,7 +141,7 @@ IMDB_TEMPLATE = """<b>
 
 <b><blockquote>⚠️ ɴᴏᴛᴇ : ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇᴛ ᴀʟʟ ғɪʟᴇs ɪɴ ᴅɪғғᴇʀᴇɴᴛ ǫᴜᴀʟɪᴛʏ ᴀɴᴅ ʟᴀɴɢᴜᴀɢᴇs ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ɢɪᴠᴇɴ ʙᴜᴛᴛᴏɴ ᴀɴᴅ sᴇᴀʀᴄʜ ᴛʜᴇʀᴇ</blockquote></b>
 
-<blockquote>🌿 ©️ Uᴘʟᴏᴀᴅ ʙʏ : <a url='https://t.me/Heart_thieft'>ʜᴇᴀʀᴛ_ᴛʜɪᴇꜰᴛ</a></blockquote></b>"""
+<blockquote>🌿 ©️ Uᴘʟᴏᴀᴅ ʙʏ : <a href='https://t.me/Heart_thieft'>Hᴇᴀʀᴛ_Tʜɪᴇꜰ</a></blockquote></b>"""
 
 # https://t.me/JISSHU_BOTS
 # https://t.me/Jisshu_support
