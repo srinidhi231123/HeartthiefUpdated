@@ -143,7 +143,6 @@ IMDB_TEMPLATE = """<b>
 
 <blockquote>🌿 ©️ Uᴘʟᴏᴀᴅ ʙʏ : <a url='https://t.me/Heart_thieft'>ʜᴇᴀʀᴛ_ᴛʜɪᴇꜰᴛ</a></blockquote></b>"""
 
-"""
 # https://t.me/JISSHU_BOTS
 # https://t.me/Jisshu_support
 @Client.on_message(filters.command(["imdb", 'search']))
