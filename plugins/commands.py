@@ -18,6 +18,7 @@ from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, DATABASE_URI, REFE
 from utils import get_settings, get_size, is_req_subscribed, save_group_settings, temp, verify_user, check_token, check_verification, get_token, get_shortlink, get_tutorial
 from database.connections_mdb import active_connection
 #from plugins.pm_filter import ENABLE_SHORTLINK
+from plugins.pm_filter import auto_filter
 import re, asyncio, os, sys
 import json
 import base64
@@ -141,6 +142,13 @@ async def start(client, message):
             referdb.add_refer_points(user_id, fromuse)
             await message.reply_text(f"𝙔𝙤𝙪 𝙝𝙖𝙫𝙚 𝙗𝙚𝙚𝙣 𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮 𝙞𝙣𝙫𝙞𝙩𝙚𝙙 𝙗𝙮 {uss.mention}!")
             await client.send_message(user_id, f"𝙔𝙤𝙪 𝙝𝙖𝙫𝙚 𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮 𝙞𝙣𝙫𝙞𝙩𝙚𝙙 {message.from_user.mention}!")
+        return
+
+    if len(message.command) == 2 and message.command[1].startswith('getfile'):
+        searches = message.command[1].split("-", 1)[1] 
+        search = searches.replace('-',' ')
+        message.text = search 
+        await auto_filter(client, message) 
         return
         
     if not await db.is_user_exist(message.from_user.id):
