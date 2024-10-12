@@ -132,16 +132,16 @@ async def who_is(client, message):
     await status_message.delete()
 
 IMDB_TEMPLATE = """<b>
-🎬 Title : {title}
-📆 Year : {year}
-🎭 Genres : {genres}
-🌟 Rating : {rating} / 10
-🔊 Language : #Tamil #Multilanguage
-💿 Quality : #HDRip
+🎬 𝗧ɪᴛʟᴇ: <code>{title}</code>
+📆 𝗬ear : {year}
+🎭 𝗚ᴇɴʀᴇ: {genres}
+🌟 𝗥ᴀᴛɪɴɢ: {rating} / 10
 
-📕 Story: {plot}</b>\n\n
-<blockquote><a href="https://t.me/Movieprovidergroups">𝗨𝗣𝗟𝗢𝗔𝗗𝗘𝗗 ✅ 𝗖𝗟𝗜𝗖𝗞 & 𝗦𝗘𝗔𝗥𝗖𝗛 🔍</a></blockquote></b>"
+📖 𝗦ᴛᴏʀʏ: {plot}
 
+<b><blockquote>⚠️ ɴᴏᴛᴇ : ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇᴛ ᴀʟʟ ғɪʟᴇs ɪɴ ᴅɪғғᴇʀᴇɴᴛ ǫᴜᴀʟɪᴛʏ ᴀɴᴅ ʟᴀɴɢᴜᴀɢᴇs ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ɢɪᴠᴇɴ ʙᴜᴛᴛᴏɴ ᴀɴᴅ sᴇᴀʀᴄʜ ᴛʜᴇʀᴇ</blockquote></b>
+
+<blockquote>🌿 ©️ Uᴘʟᴏᴀᴅ ʙʏ : <a url='https://t.me/Heart_thieft'>ʜᴇᴀʀᴛ_ᴛʜɪᴇꜰᴛ</a></blockquote></b>"""
 
 """
 # https://t.me/JISSHU_BOTS
