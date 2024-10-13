@@ -4,6 +4,7 @@ import random
 import asyncio
 import pytz
 from Script import script
+from plugins.pm_filter import auto_filter
 from datetime import datetime
 from database.refer import referdb
 from pyrogram import Client, filters, enums
@@ -18,7 +19,6 @@ from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, DATABASE_URI, REFE
 from utils import get_settings, get_size, is_req_subscribed, save_group_settings, temp, verify_user, check_token, check_verification, get_token, get_shortlink, get_tutorial
 from database.connections_mdb import active_connection
 #from plugins.pm_filter import ENABLE_SHORTLINK
-from plugins.pm_filter import auto_filter
 import re, asyncio, os, sys
 import json
 import base64
