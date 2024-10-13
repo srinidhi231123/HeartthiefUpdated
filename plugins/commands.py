@@ -4,7 +4,6 @@ import random
 import asyncio
 import pytz
 from Script import script
-from plugins.pm_filter import auto_filter
 from datetime import datetime
 from database.refer import referdb
 from pyrogram import Client, filters, enums
