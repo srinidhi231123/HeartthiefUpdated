@@ -3,6 +3,27 @@ from pyrogram import Client, filters
 from pyrogram.types import ReplyKeyboardMarkup, KeyboardButton
 from info import ADMINS
 
+@Client.on_message(filters.command('grp_cmds'))
+async def grp_cmds(client, message):
+    user_id = message.from_user.id if message.from_user else None
+    if not user_id:
+        return await message.reply("<b>💔 ʏᴏᴜ ᴀʀᴇ ᴀɴᴏɴʏᴍᴏᴜꜱ ᴀᴅᴍɪɴ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ...</b>")
+    chat_type = message.chat.type
+    if chat_type not in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
+        return await message.reply_text("<code>ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ɪɴ ɢʀᴏᴜᴘ.</code>")
+    grp_id = message.chat.id
+    if not await is_check_admin(client, grp_id, message.from_user.id):
+        return await message.reply_text('<b>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ ɪɴ ᴛʜɪꜱ ɢʀᴏᴜᴘ</b>')
+    #title = message.chat.title
+    buttons = [[
+                InlineKeyboardButton('❌ ᴄʟᴏsᴇ ❌', callback_data='close_data')
+            ]]        
+    await message.reply_text(
+        text=script.GROUP_C_TEXT,
+        reply_markup=InlineKeyboardMarkup(buttons),
+        parse_mode=enums.ParseMode.HTML
+    )
+
 @Client.on_message(filters.command("admin_cmd") & filters.user(ADMINS))
 async def admin_cmd(client, message):
     # Define the buttons
